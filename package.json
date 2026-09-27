@@ -1,0 +1,14 @@
+{
+  "name": "chat-crypto-news-bot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "post": "node scripts/post-news.mjs"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
