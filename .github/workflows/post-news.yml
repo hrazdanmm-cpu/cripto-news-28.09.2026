@@ -2,8 +2,8 @@ name: Post News Bot
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # Աշխատում է 20 րոպեն մեկ
-  workflow_dispatch: # Թույլ է տալիս ձեռքով գործարկել (Run workflow)
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -19,6 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Clear cache temporarily for test
+        run: echo "{}" > data/posted.json
 
       - name: Run script
         env:
