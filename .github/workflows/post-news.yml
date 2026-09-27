@@ -1,0 +1,33 @@
+name: Post News Bot
+
+on:
+  schedule:
+    - cron: '*/20 * * * *' # Աշխատում է 20 րոպեն մեկ
+  workflow_dispatch: # Թույլ է տալիս ձեռքով գործարկել (Run workflow)
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run script
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: node scripts/post-news.mjs
+
+      - name: Commit updated posted.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update posted.json [skip ci]"
+          file_pattern: "data/posted.json"
