@@ -8,6 +8,8 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,9 +21,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Clear cache temporarily for test
-        run: echo "{}" > data/posted.json
 
       - name: Run script
         env:
