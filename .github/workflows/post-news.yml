@@ -1,15 +1,16 @@
-name: Post News Bot
+name: Post crypto news to Telegram
 
 on:
   schedule:
     - cron: '*/20 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,10 +27,10 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-        run: node scripts/post-news.mjs
+        run: npm run post
 
       - name: Commit updated posted.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-update posted.json [skip ci]"
-          file_pattern: "data/posted.json"
+          file_pattern: data/posted.json
