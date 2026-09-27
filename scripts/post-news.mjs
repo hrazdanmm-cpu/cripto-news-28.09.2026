@@ -1,8 +1,12 @@
 // scripts/post-news.mjs
 //
-// Reads a list of crypto-news RSS feeds, checks each source's latest article
+// Reads a list of crypto-news RSS feeds, checks each source's articles
 // against data/posted.json, and posts anything new to a Telegram channel via
 // a bot. Updates data/posted.json so the same article is never posted twice.
+//
+// On the very first run for a source (no history yet), it backfills the
+// latest BACKFILL_COUNT articles (oldest -> newest) so the channel isn't empty.
+// After that, only genuinely new articles are posted.
 //
 // Required environment variables (set as GitHub Actions secrets):
 //   BOT_TOKEN  - Telegram bot token from @BotFather
@@ -18,6 +22,12 @@ const DATA_PATH = path.join(__dirname, '..', 'data', 'posted.json');
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
+
+// How many articles to backfill the first time a source is seen.
+const BACKFILL_COUNT = 5;
+
+// How many old links to remember per source (keeps the state file small).
+const HISTORY_LIMIT = 30;
 
 // Source name -> RSS feed URL. Names must match the keys already used in
 // data/posted.json so dedup state lines up correctly.
@@ -59,9 +69,12 @@ function stripUtm(url) {
 async function loadState() {
   try {
     const raw = await fs.readFile(DATA_PATH, 'utf-8');
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (!parsed.sources) parsed.sources = {};
+    if (typeof parsed.totalPostedCount !== 'number') parsed.totalPostedCount = 0;
+    return parsed;
   } catch {
-    return { links: {}, totalPostedCount: 0 };
+    return { sources: {}, totalPostedCount: 0 };
   }
 }
 
@@ -106,37 +119,48 @@ async function main() {
   }
 
   const state = await loadState();
-  if (!state.links) state.links = {};
-  if (typeof state.totalPostedCount !== 'number') state.totalPostedCount = 0;
-
   let posted = 0;
 
   for (const [source, feedUrl] of Object.entries(FEEDS)) {
     try {
       const feed = await parser.parseURL(feedUrl);
-      const latest = feed.items?.[0];
-      if (!latest?.link) {
+      const items = (feed.items || []).filter((i) => i.link);
+
+      if (items.length === 0) {
         console.log(`[${source}] no items found, skipping.`);
         continue;
       }
 
-      const cleanLink = stripUtm(latest.link);
-      const previousLink = state.links[source];
+      const seenLinks = new Set(state.sources[source] || []);
+      const isFirstRun = seenLinks.size === 0;
 
-      if (cleanLink === previousLink) {
+      // Items come newest-first from the feed; take what we need and post
+      // oldest -> newest so the channel reads in chronological order.
+      const candidates = isFirstRun
+        ? items.slice(0, BACKFILL_COUNT).reverse()
+        : items.filter((i) => !seenLinks.has(stripUtm(i.link))).reverse();
+
+      if (candidates.length === 0) {
         console.log(`[${source}] no new article.`);
         continue;
       }
 
-      await sendToTelegram(source, latest.title || '(no title)', cleanLink);
-      state.links[source] = cleanLink;
-      state.totalPostedCount += 1;
-      posted += 1;
-      console.log(`[${source}] posted: ${latest.title}`);
+      for (const item of candidates) {
+        const cleanLink = stripUtm(item.link);
+        if (seenLinks.has(cleanLink)) continue; // safety net against duplicates within this run
 
-      // small delay so we don't hit Telegram's rate limits when several
-      // sources have new articles in the same run
-      await new Promise((r) => setTimeout(r, 1200));
+        await sendToTelegram(source, item.title || '(no title)', cleanLink);
+        seenLinks.add(cleanLink);
+        state.totalPostedCount += 1;
+        posted += 1;
+        console.log(`[${source}] posted: ${item.title}`);
+
+        // small delay so we don't hit Telegram's rate limits
+        await new Promise((r) => setTimeout(r, 1200));
+      }
+
+      // Keep only the most recent HISTORY_LIMIT links for this source.
+      state.sources[source] = [...seenLinks].slice(-HISTORY_LIMIT);
     } catch (err) {
       console.error(`[${source}] error: ${err.message}`);
       // keep going with the other sources even if one feed fails
