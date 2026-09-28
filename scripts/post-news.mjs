@@ -191,27 +191,42 @@ function getImageSize(b) {
   return null;
 }
 
+function detectType(b) {
+  if (b[0] === 0xff && b[1] === 0xd8) return 'image/jpeg';
+  if (b[0] === 0x89 && b.toString('ascii', 1, 4) === 'PNG') return 'image/png';
+  if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') return 'image/webp';
+  return null; // GIF and anything else is rejected
+}
+
+// Returns { url, buf, type } for a good image, otherwise null
 async function isGoodImage(url) {
-  if (!url || BAD_IMAGE_URL.test(url)) return false;
+  if (!url || BAD_IMAGE_URL.test(url)) return null;
   try {
     const res = await fetch(url, {
       headers: { 'User-Agent': UA, Accept: 'image/*' },
       signal: AbortSignal.timeout(15000),
       redirect: 'follow',
     });
-    if (!res.ok) return false;
-    const type = res.headers.get('content-type') || '';
-    if (!/image\/(jpe?g|png|webp|gif)/i.test(type)) return false;
+    if (!res.ok) return null;
+    if (/^text\//i.test(res.headers.get('content-type') || '')) return null;
     const len = Number(res.headers.get('content-length') || 0);
-    if (len && len > MAX_IMAGE_BYTES) return false;
+    if (len && len > MAX_IMAGE_BYTES) return null;
     const buf = Buffer.from(await res.arrayBuffer());
-    if (buf.length > MAX_IMAGE_BYTES || buf.length < 15000) return false; // too small = low quality
+    if (buf.length > MAX_IMAGE_BYTES || buf.length < 15000) return null; // too small = low quality
+    const type = detectType(buf);
+    if (!type) return null;
     const size = getImageSize(buf);
-    if (!size) return false;
+    if (!size) return null;
     const ratio = size.w / size.h;
-    return size.w >= MIN_IMAGE_WIDTH && size.h >= MIN_IMAGE_HEIGHT && ratio >= 0.7 && ratio <= 3.2;
+    const ok =
+      size.w >= MIN_IMAGE_WIDTH &&
+      size.h >= MIN_IMAGE_HEIGHT &&
+      ratio >= 0.7 &&
+      ratio <= 3.2 &&
+      size.w + size.h <= 10000; // Telegram photo limit
+    return ok ? { url, buf, type } : null;
   } catch {
-    return false;
+    return null;
   }
 }
 
@@ -220,7 +235,8 @@ async function pickImage(candidates) {
   for (const c of candidates) {
     if (!c || seen.has(c)) continue;
     seen.add(c);
-    if (await isGoodImage(c)) return c;
+    const img = await isGoodImage(c);
+    if (img) return img;
   }
   return null;
 }
@@ -386,21 +402,33 @@ function nextAd(state) {
   return ad;
 }
 
-// Layout: [image via link preview on top] CRYPTO NEWS / bold headline / summary / Source / ad / link
+const TRADE_LINE = 'Before starting a trade, use the futures calculator.';
+const CAPTION_LIMIT = 1000; // Telegram allows 1024 visible characters in a photo caption
+
+// Layout (one message): [photo] / CRYPTO NEWS / bold headline / summary / Source /
+// trade sentence / ad sentence as a clickable link
 function buildMessage(title, lines, source, ad) {
-  const head = `CRYPTO NEWS\n\n<b>${escapeHtml(title)}</b>\n\n`;
-  const tail = `\n\nSource: ${escapeHtml(source)}\n<a href="${MINI_APP_URL}">${escapeHtml(ad)}</a>`;
-  const body = lines.map((l) => escapeHtml(l));
-  let msg = head + body.join('\n') + tail;
-  while (msg.length > 4000 && body.length > 1) {
+  const build = (body) => ({
+    html:
+      `CRYPTO NEWS\n\n<b>${escapeHtml(title)}</b>\n\n` +
+      `${body.map(escapeHtml).join('\n')}\n\n` +
+      `Source: ${escapeHtml(source)}\n\n` +
+      `${TRADE_LINE}\n<a href="${MINI_APP_URL}">${escapeHtml(ad)}</a>`,
+    plain:
+      `CRYPTO NEWS\n\n${title}\n\n${body.join('\n')}\n\nSource: ${source}\n\n${TRADE_LINE}\n${ad}`,
+  });
+  const body = [...lines];
+  let m = build(body);
+  // Drop the least important trailing sentence until the caption fits
+  while (m.plain.length > CAPTION_LIMIT && body.length > 1) {
     body.pop();
-    msg = head + body.join('\n') + tail;
+    m = build(body);
   }
-  return msg;
+  return m.html;
 }
 
-async function tgSend(payload) {
-  const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+async function tgJson(method, payload) {
+  const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/${method}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
@@ -409,16 +437,42 @@ async function tgSend(payload) {
 }
 
 async function sendPost(text, image) {
-  const base = { chat_id: CHAT_ID, text, parse_mode: 'HTML' };
   if (image) {
-    const data = await tgSend({
-      ...base,
-      link_preview_options: { url: image, prefer_large_media: true, show_above_text: true },
+    // 1) Upload the downloaded image as a real Telegram photo (opens inside Telegram when tapped)
+    try {
+      const ext = image.type.includes('png') ? 'png' : image.type.includes('webp') ? 'webp' : 'jpg';
+      const form = new FormData();
+      form.append('chat_id', String(CHAT_ID));
+      form.append('caption', text);
+      form.append('parse_mode', 'HTML');
+      form.append('photo', new Blob([image.buf], { type: image.type }), `news.${ext}`);
+      const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
+        method: 'POST',
+        body: form,
+      });
+      const data = await res.json();
+      if (data.ok) return;
+      console.error(`sendPhoto (upload) failed: ${data.description}`);
+    } catch (e) {
+      console.error(`sendPhoto (upload) error: ${e.message}`);
+    }
+    // 2) Let Telegram download the image from its URL
+    const d2 = await tgJson('sendPhoto', {
+      chat_id: CHAT_ID,
+      photo: image.url,
+      caption: text,
+      parse_mode: 'HTML',
     });
-    if (data.ok) return;
-    console.error(`Image preview failed (${data.description}), retrying without image`);
+    if (d2.ok) return;
+    console.error(`sendPhoto (url) failed: ${d2.description}`);
   }
-  const data = await tgSend({ ...base, link_preview_options: { is_disabled: true } });
+  // 3) Text only, no link preview frame
+  const data = await tgJson('sendMessage', {
+    chat_id: CHAT_ID,
+    text,
+    parse_mode: 'HTML',
+    link_preview_options: { is_disabled: true },
+  });
   if (!data.ok) throw new Error(`Telegram API error: ${JSON.stringify(data)}`);
 }
 
