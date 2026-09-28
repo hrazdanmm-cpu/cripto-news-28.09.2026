@@ -15,7 +15,8 @@ const MAX_POSTS_PER_RUN = 10;
 
 // ---- Summary limits (full sentences only, never cut mid-sentence) ----
 const MAX_SUMMARY_LINES = 15;   // hard limit on number of lines
-const MAX_SUMMARY_CHARS = 600;  // ~15 wrapped lines on a phone screen
+const MAX_SUMMARY_CHARS = 480;  // ~15 wrapped lines on a phone screen
+const MIN_SUMMARY_CHARS = 300;  // ~10 lines; below this we pull in extra text sources
 const MIN_SENTENCES = 2;
 
 // ---- Image quality rules ----
@@ -75,7 +76,7 @@ const AD_TEMPLATES = [
   "✨ If you truly want to make consistent profits in futures trading, Futures Calculator is your indispensable assistant."
 ];
 
-const UA = 'Mozilla/5.0 (compatible; ChatCryptoBot/1.0)';
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const parser = new Parser({ timeout: 15000, headers: { 'User-Agent': UA } });
 
 // ------------------------------------------------------------------
@@ -129,7 +130,7 @@ function cleanText(t = '') {
 }
 
 const BOILERPLATE =
-  /subscribe|newsletter|cookie|follow us|read more|sign up|advertis|appeared first on|all rights reserved|disclaimer|not financial advice|getty images|image source|photo:|click here|download the app|join our|telegram channel|twitter|copyright|©/i;
+  /subscribe|newsletter|cookie|follow us|read more|sign up|advertis|appeared first on|all rights reserved|disclaimer|not financial advice|getty images|image source|photo:|click here|download the app|join our|telegram channel|copyright|©/i;
 
 // ------------------------------------------------------------------
 // Image handling: find candidates, measure real size, reject bad ones
@@ -231,11 +232,11 @@ async function pickImage(candidates) {
 async function fetchArticle(url) {
   try {
     const res = await fetch(url, {
-      headers: { 'User-Agent': UA, Accept: 'text/html' },
+      headers: { 'User-Agent': UA, Accept: 'text/html,application/xhtml+xml', 'Accept-Language': 'en-US,en;q=0.9' },
       signal: AbortSignal.timeout(15000),
       redirect: 'follow',
     });
-    if (!res.ok) return { images: [], text: '' };
+    if (!res.ok) return { images: [], text: '', desc: '' };
     const html = await res.text();
 
     const abs = (u) => {
@@ -259,22 +260,50 @@ async function fetchArticle(url) {
       .replace(/<style[\s\S]*?<\/style>/gi, '')
       .replace(/<(nav|footer|aside|header|form)[\s\S]*?<\/\1>/gi, '');
 
-    // Prefer the <article> block, fall back to the whole page
-    const articleMatch = cleaned.match(/<article[\s\S]*?<\/article>/i);
-    const scope = articleMatch ? articleMatch[0] : cleaned;
+    const getParas = (scopeHtml) =>
+      [...scopeHtml.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
+        .map((x) => cleanText(htmlToText(x[1])))
+        .filter((t) => t.length > 50 && /[.!?”"’')]$/.test(t) && !BOILERPLATE.test(t));
+    const size = (paras) => paras.join(' ').length;
+
+    // Check every <article> block and keep the one with the most real text
+    // (the first <article> on a page is often just a teaser card)
+    let best = { scope: cleaned, paras: [] };
+    for (const m of cleaned.matchAll(/<article[\s\S]*?<\/article>/gi)) {
+      const paras = getParas(m[0]);
+      if (size(paras) > size(best.paras)) best = { scope: m[0], paras };
+    }
+    // No good <article>? Use every paragraph on the page
+    if (size(best.paras) < 300) {
+      const paras = getParas(cleaned);
+      if (size(paras) > size(best.paras)) best = { scope: cleaned, paras };
+    }
 
     // Extra image candidates from the article body
-    for (const m of [...scope.matchAll(/<img[^>]+(?:data-src|data-lazy-src|src)=["']([^"']+)["']/gi)].slice(0, 8)) {
+    for (const m of [...best.scope.matchAll(/<img[^>]+(?:data-src|data-lazy-src|src)=["']([^"']+)["']/gi)].slice(0, 8)) {
       images.push(abs(m[1]));
     }
 
-    const paras = [...scope.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
-      .map((x) => cleanText(htmlToText(x[1])))
-      .filter((t) => t.length > 50 && /[.!?”"’')]$/.test(t) && !BOILERPLATE.test(t));
+    // JSON-LD "articleBody" (many sites include the full text there)
+    let ld = '';
+    for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
+      const mm = m[1].match(/"articleBody"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+      if (mm) {
+        try { ld = cleanText(htmlToText(JSON.parse(`"${mm[1]}"`))); } catch { /* ignore */ }
+      }
+    }
 
-    return { images: images.filter(Boolean), text: paras.join(' ').slice(0, 20000) };
+    // Meta description as an extra source of one good sentence
+    const dm =
+      html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
+    const desc = dm ? cleanText(decodeEntities(dm[1])) : '';
+
+    const bodyText = best.paras.join(' ');
+    const text = (ld.length > bodyText.length ? ld : bodyText).slice(0, 20000);
+    return { images: images.filter(Boolean), text, desc };
   } catch {
-    return { images: [], text: '' };
+    return { images: [], text: '', desc: '' };
   }
 }
 
@@ -301,7 +330,7 @@ function words(s) {
 
 function summarize(text, title = '') {
   const sentences = [...new Set(splitSentences(cleanText(text)))]
-    .filter((s) => s.length >= 40 && s.length <= 300 && !BOILERPLATE.test(s));
+    .filter((s) => s.length >= 40 && s.length <= 350 && !BOILERPLATE.test(s));
   if (!sentences.length) return [];
 
   const titleWords = new Set(words(title));
@@ -458,7 +487,10 @@ async function main() {
 
           // 2) Summary: key facts, whole sentences, max 15 lines
           const rssText = cleanText(htmlToText(item['content:encoded'] || item.content || item.summary || ''));
-          const text = art.text.length > rssText.length ? art.text : rssText;
+          let text = art.text.length > rssText.length ? art.text : rssText;
+          if (text.length < MIN_SUMMARY_CHARS * 2) {
+            text = [art.text, art.desc, rssText].filter(Boolean).join(' ');
+          }
           let lines = summarize(text, item.title || '');
           if (!lines.length) lines = fallbackLines(item);
 
