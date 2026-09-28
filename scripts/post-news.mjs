@@ -360,7 +360,7 @@ function nextAd(state) {
 // Layout: [image via link preview on top] CRYPTO NEWS / bold headline / summary / Source / ad / link
 function buildMessage(title, lines, source, ad) {
   const head = `CRYPTO NEWS\n\n<b>${escapeHtml(title)}</b>\n\n`;
-  const tail = `\n\nSource: ${escapeHtml(source)}\n\n${escapeHtml(ad)}\n<a href="${MINI_APP_URL}">Futures Calculator ⬇️</a>`;
+  const tail = `\n\nSource: ${escapeHtml(source)}\n<a href="${MINI_APP_URL}">${escapeHtml(ad)}</a>`;
   const body = lines.map((l) => escapeHtml(l));
   let msg = head + body.join('\n') + tail;
   while (msg.length > 4000 && body.length > 1) {
