@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 287,
+  "totalPostedCount": 297,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
@@ -43,7 +43,17 @@
       "https://cointelegraph.com/news/strategy-seeks-shareholder-approval-daily-preferred-stock-dividends",
       "https://cointelegraph.com/news/bitget-clarifies-assets-affected-security-breach",
       "https://cointelegraph.com/news/former-hack-vc-partner-hsin-ju-chuang-found-dead",
-      "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex"
+      "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex",
+      "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo",
+      "https://cointelegraph.com/news/og-com-seeks-cftc-approval-single-stock-perpetual-futures",
+      "https://cointelegraph.com/news/cftc-sues-cash-fx-alleges-950m-crypto-linked-forex-scheme",
+      "https://cointelegraph.com/news/sec-commissioner-hester-peirce-to-leave-post-on-oct-2",
+      "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
+      "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
+      "https://cointelegraph.com/news/vitalik-hegota-ethereum-last-normal-fork",
+      "https://cointelegraph.com/news/south-korea-weighs-crypto-market-makers-after-jpyc-trades-at-4-times-peg",
+      "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025",
+      "https://cointelegraph.com/markets/bitcoin-drops-under-83k-as-liquidity-hunting-keeps-bulls-from-targeting-yearly-open"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -67,5 +77,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 20
+  "adIndex": 5
 }
