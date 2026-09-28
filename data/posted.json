@@ -1,4 +1,20 @@
 {
-  "sources": {},
-  "totalPostedCount": 0
+  "links": {
+    "Cointelegraph": "https://cointelegraph.com/magazine/the-sec-wants-to-bring-back-icos-theres-a-catch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "CoinDesk": "https://www.coindesk.com/tech/2026/08/26/ethereum-developers-propose-first-step-to-protect-eth-staking-from-quantum-attacks",
+    "Decrypt": "https://decrypt.co/376590/digital-euro-will-offer-maximum-level-of-privacy-ecb-board-member-says",
+    "The Block": "https://www.theblock.co/news/markets/2026-08-26-sol-treasury-firm-defi-development-launches-real-time-state-of-solana-intelligence-platform-412798",
+    "CryptoSlate": "https://cryptoslate.com/old-lightning-nodes-may-be-exposed-to-a-full-channel-wipeout-after-lnd-fix-lands-later-than-disclosed/",
+    "Bitcoinist": "https://bitcoinist.com/tac-sidechain-halts-after-supply-exploit-as-ton-mainnet-remains-separate/",
+    "NewsBTC": "https://www.newsbtc.com/news/coinbase-investor-class-action-can-move-forward-federal-judge-rules/",
+    "Bitcoin.com News": "https://news.bitcoin.com/bitcoin-etf/blackrock-processes-5-billion-in-direct-bitcoin-to-etf-conversions/",
+    "CryptoPotato": "https://cryptopotato.com/rent-tron-energy-and-reduce-usdt-fees-tronbid-expands-marketplace/",
+    "Crypto News": "https://crypto.news/defi-development-launches-dashboard-tracking-solana-network-data/",
+    "CoinJournal": "https://coinjournal.net/news/pi-holds-above-0-085-support-as-crypto-market-recovery-loses-momentum/",
+    "Crypto Daily": "https://cryptodaily.co.uk/2026/08/virtual-sports-at-crypto-sportsbooks-explained",
+    "TheNewsCrypto": "https://thenewscrypto.com/bitcoin-beach-sees-everyday-payments-fade-as-el-salvadors-adoption-experiment-evolves/",
+    "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
+    "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
+  },
+  "totalPostedCount": 247
 }
