@@ -12,6 +12,10 @@ const CHAT_ID = process.env.CHAT_ID;
 const BACKFILL_COUNT = 2;
 const HISTORY_LIMIT = 100;
 const MAX_POSTS_PER_RUN = 10;
+// The run must finish well before the next 20-minute cron start
+const MAX_RUN_MS = 12 * 60 * 1000;
+const MAX_IMAGE_CANDIDATES = 6;
+const STARTED = Date.now();
 
 // ---- Summary limits (full sentences only, never cut mid-sentence) ----
 const MAX_SUMMARY_LINES = 15;   // hard limit on number of lines
@@ -208,7 +212,8 @@ async function isGoodImage(url) {
       redirect: 'follow',
     });
     if (!res.ok) return null;
-    if (/^text\//i.test(res.headers.get('content-type') || '')) return null;
+    const ctype = (res.headers.get('content-type') || '').toLowerCase();
+    if (ctype && !/^image\/|octet-stream|binary/.test(ctype)) return null;
     const len = Number(res.headers.get('content-length') || 0);
     if (len && len > MAX_IMAGE_BYTES) return null;
     const buf = Buffer.from(await res.arrayBuffer());
@@ -235,6 +240,7 @@ async function pickImage(candidates) {
   for (const c of candidates) {
     if (!c || seen.has(c)) continue;
     seen.add(c);
+    if (seen.size > MAX_IMAGE_CANDIDATES) break;
     const img = await isGoodImage(c);
     if (img) return img;
   }
@@ -509,6 +515,7 @@ async function main() {
   let posted = 0;
 
   outer: for (const [source, feedUrl] of Object.entries(FEEDS)) {
+    if (Date.now() - STARTED > MAX_RUN_MS) break;
     try {
       const feed = await parser.parseURL(feedUrl);
       const items = (feed.items || []).filter((i) => i.link);
@@ -521,7 +528,7 @@ async function main() {
         : items.filter((i) => !seen.has(stripUtm(i.link))).reverse();
 
       for (const item of candidates) {
-        if (posted >= MAX_POSTS_PER_RUN) {
+        if (posted >= MAX_POSTS_PER_RUN || Date.now() - STARTED > MAX_RUN_MS) {
           state.sources[source] = [...seen].slice(-HISTORY_LIMIT);
           break outer;
         }
