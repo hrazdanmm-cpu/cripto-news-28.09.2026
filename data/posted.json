@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 297,
+  "totalPostedCount": 307,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
@@ -53,7 +53,17 @@
       "https://cointelegraph.com/news/vitalik-hegota-ethereum-last-normal-fork",
       "https://cointelegraph.com/news/south-korea-weighs-crypto-market-makers-after-jpyc-trades-at-4-times-peg",
       "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025",
-      "https://cointelegraph.com/markets/bitcoin-drops-under-83k-as-liquidity-hunting-keeps-bulls-from-targeting-yearly-open"
+      "https://cointelegraph.com/markets/bitcoin-drops-under-83k-as-liquidity-hunting-keeps-bulls-from-targeting-yearly-open",
+      "https://cointelegraph.com/news/fake-giwa-blockchain-scam-drains-2m-eth",
+      "https://cointelegraph.com/news/hong-kong-sfc-afrc-crypto-financial-reporting-mou",
+      "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
+      "https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week",
+      "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc",
+      "https://cointelegraph.com/magazine/altseason-is-coming-and-traders-are-more-discerning-this-time",
+      "https://cointelegraph.com/news/mica-shift-rulemaking-to-supervision-esma-chair",
+      "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability",
+      "https://cointelegraph.com/news/crypto-industry-spending-ohio-senate-race-sherrod-brown",
+      "https://cointelegraph.com/news/bybit-accepts-franklin-templeton-tokenized-funds-trading-collateral"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -77,5 +87,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 5
+  "adIndex": 15
 }
