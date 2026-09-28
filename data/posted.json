@@ -16,14 +16,24 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 267,
+  "totalPostedCount": 277,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
       "https://cointelegraph.com/news/saylor-outlines-bill-of-digital-rights-to-help-build-prosperity-in-future-economy",
       "https://cointelegraph.com/news/riot-platforms-repays-200m-credit-facility-releases-collateral",
       "https://cointelegraph.com/news/australia-summons-openai-anthropic-chiefs-to-senate-inquiry-on-health-data-hack-report",
-      "https://cointelegraph.com/magazine/thorchain-under-fire-over-bitget-hack-eth-is-beyond-blockchain-now"
+      "https://cointelegraph.com/magazine/thorchain-under-fire-over-bitget-hack-eth-is-beyond-blockchain-now",
+      "https://cointelegraph.com/news/bitget-calls-security-withdrawal-claims-unverified-amid-178m-breach-reports",
+      "https://cointelegraph.com/news/fed-proposes-new-capital-redemption-rules-for-stablecoin-issuers",
+      "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express",
+      "https://cointelegraph.com/news/bitget-ceo-suspects-north-korea-behind-352m-hack-citing-ip-clues",
+      "https://cointelegraph.com/news/block-brings-bitcoin-lightning-payments-to-x402-for-ai-agents",
+      "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork",
+      "https://cointelegraph.com/news/australia-pm-warns-of-ais-furious-pace-after-agent-breached-government-site",
+      "https://cointelegraph.com/news/samourai-wallet-co-founder-30-day-prison-transfer",
+      "https://cointelegraph.com/markets/bitcoin-etf-six-day-streak-2-8-billion",
+      "https://cointelegraph.com/news/kelpdao-layerzero-lawsuit-rseth-exploit"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -46,5 +56,6 @@
       "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
-  }
+  },
+  "adIndex": 10
 }
