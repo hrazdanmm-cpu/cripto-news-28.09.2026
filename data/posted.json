@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 277,
+  "totalPostedCount": 287,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
@@ -33,7 +33,17 @@
       "https://cointelegraph.com/news/australia-pm-warns-of-ais-furious-pace-after-agent-breached-government-site",
       "https://cointelegraph.com/news/samourai-wallet-co-founder-30-day-prison-transfer",
       "https://cointelegraph.com/markets/bitcoin-etf-six-day-streak-2-8-billion",
-      "https://cointelegraph.com/news/kelpdao-layerzero-lawsuit-rseth-exploit"
+      "https://cointelegraph.com/news/kelpdao-layerzero-lawsuit-rseth-exploit",
+      "https://cointelegraph.com/news/magic-eden-nft-whitehat-vulnerability",
+      "https://cointelegraph.com/markets/ibit-options-trading-bitcoins-rebound",
+      "https://cointelegraph.com/news/no-confirmed-crypto-theft-iphone-safari-attack-slowmist",
+      "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
+      "https://cointelegraph.com/magazine/exchanges-reporting-crypto-gains-to-irs-becomes-tax-nightmare",
+      "https://cointelegraph.com/news/crypto-biz-crypto-tradfi-stablecoins-tokenized-assets",
+      "https://cointelegraph.com/news/strategy-seeks-shareholder-approval-daily-preferred-stock-dividends",
+      "https://cointelegraph.com/news/bitget-clarifies-assets-affected-security-breach",
+      "https://cointelegraph.com/news/former-hack-vc-partner-hsin-ju-chuang-found-dead",
+      "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -57,5 +67,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 10
+  "adIndex": 20
 }
