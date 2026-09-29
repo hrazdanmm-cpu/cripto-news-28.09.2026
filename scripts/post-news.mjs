@@ -560,6 +560,9 @@ async function main() {
           seen.add(link);
           state.totalPostedCount += 1;
           posted += 1;
+          // Save progress right after every post, so a cancelled/timed-out run never re-posts news
+          state.sources[source] = [...seen].slice(-HISTORY_LIMIT);
+          await saveState(state);
           console.log(`[${source}] posted: ${item.title} | image: ${image ? 'yes' : 'no'} | lines: ${lines.length}`);
           await new Promise((r) => setTimeout(r, 1500));
         } catch (err) {
