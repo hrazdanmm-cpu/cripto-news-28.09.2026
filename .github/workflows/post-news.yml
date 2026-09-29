@@ -2,6 +2,7 @@ name: Post crypto news to Telegram
 
 on:
   schedule:
+    # Every 20 minutes, but NOT at :00/:20/:40 (GitHub is most overloaded then and often skips those runs)
     - cron: '7,27,47 * * * *'
   workflow_dispatch: {}
 
@@ -35,6 +36,7 @@ jobs:
         run: npm run post
 
       - name: Commit updated posted.json
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-update posted.json [skip ci]"
