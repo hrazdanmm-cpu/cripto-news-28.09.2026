@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 367,
+  "totalPostedCount": 377,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
@@ -86,7 +86,12 @@
       "https://cointelegraph.com/news/kakaopay-securities-dinari-ondo-tokenized-korean-stocks-push",
       "https://cointelegraph.com/news/openai-30-billion-funding-round-1-4-trillion-valuation",
       "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners",
-      "https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai"
+      "https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai",
+      "https://cointelegraph.com/news/binance-pay-usdt-paypay-merchants-japan",
+      "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut",
+      "https://cointelegraph.com/news/illinois-crypto-tax-rules-defi-stablecoins",
+      "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
+      "https://cointelegraph.com/news/allunity-europe-mica-usd-stablecoin-usdau"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -127,7 +132,12 @@
       "https://www.coindesk.com/opinion/2026/09/29/democrats-killed-the-clarity-act",
       "https://www.coindesk.com/tech/2026/09/29/embargo-12-et-ethereum-users-get-another-way-to-pay-privately-as-zk-money-returns-after-three-years",
       "https://www.coindesk.com/business/2026/09/29/cboe-s-and-p-dow-jones-may-explore-tokenized-options-contracts-under-extended-licensing-deal",
-      "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders"
+      "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders",
+      "https://www.coindesk.com/markets/2026/09/30/bitcoin-rally-shows-signs-of-cooling-even-as-a-bull-score-gauge-nears-its-perfect-score",
+      "https://www.coindesk.com/tech/2026/09/30/xrp-ledger-starts-carrying-fund-records-from-brazil-operator-overseeing-usd4-trillion",
+      "https://www.coindesk.com/markets/2026/09/30/robinhood-is-giving-customers-an-ai-agent-that-trades-for-them-plus-10x-crypto-bets",
+      "https://www.coindesk.com/markets/2026/09/30/bitcoin-bulls-have-one-price-level-to-defend",
+      "https://www.coindesk.com/business/2026/09/30/how-european-investors-can-now-buy-bitcoin-without-taking-on-u-s-dollar-risk"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -147,5 +157,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 0
+  "adIndex": 10
 }
