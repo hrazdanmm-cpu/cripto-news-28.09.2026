@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 407,
+  "totalPostedCount": 417,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case",
@@ -105,7 +105,10 @@
       "https://cointelegraph.com/news/bloomberg-brings-onchain-stablecoin-data-to-its-terminal-news-brief",
       "https://cointelegraph.com/news/base-cobalt-upgrade-tokenized-finance-b20-kyc",
       "https://cointelegraph.com/news/stand-with-crypto-coinbase-senate-picks-us-midterms",
-      "https://cointelegraph.com/markets/standard-chartered-ethena-usde-growth-40b"
+      "https://cointelegraph.com/markets/standard-chartered-ethena-usde-growth-40b",
+      "https://cointelegraph.com/news/metamask-exits-lido-validators-as-it-investigates-security-incident",
+      "https://cointelegraph.com/news/cftc-seeks-to-define-event-contracts-as-swaps-amid-prediction-market-fight",
+      "https://cointelegraph.com/news/crypto-hacks-total-766m-in-september-peckshield"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -166,7 +169,9 @@
       "https://www.coindesk.com/coindesk-indices/2026/09/30/crypto-long-and-short-what-will-the-ai-agents-run-on",
       "https://www.coindesk.com/policy/2026/09/30/u-s-cftc-seeks-event-contract-definitions-that-may-defy-states-gambling-claims",
       "https://www.coindesk.com/business/2026/09/24/open-usd-takes-on-tether-circle-with-a-different-stablecoin-model-that-s-building-money",
-      "https://www.coindesk.com/news-analysis/2026/09/30/crypto-industry-gave-usd8-million-to-clarity-act-lobbyists-who-didn-t-close-the-deal"
+      "https://www.coindesk.com/news-analysis/2026/09/30/crypto-industry-gave-usd8-million-to-clarity-act-lobbyists-who-didn-t-close-the-deal",
+      "https://www.coindesk.com/markets/2026/10/01/bitcoin-s-soft-inflation-pop-to-usd85-500-fades-as-bond-yields-refuse-to-fall",
+      "https://www.coindesk.com/tech/2026/10/01/dogecoin-gets-defi-testnet-as-dogeos-bets-miners-will-eventually-secure-its-apps"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -177,7 +182,12 @@
       "https://decrypt.co/379369/ai-agents-hacked-test-environment-cheat-darktrace",
       "https://decrypt.co/379380/us-prosecutors-84-million-bank-tether-and-bitfinex",
       "https://decrypt.co/379353/google-free-1080p-ai-video-generation",
-      "https://decrypt.co/379461/vitalik-buterin-outlines-cryptographic-world-computer-plan-for-ethereum"
+      "https://decrypt.co/379461/vitalik-buterin-outlines-cryptographic-world-computer-plan-for-ethereum",
+      "https://decrypt.co/379463/chainlink-institutions-add-bridge-checks-kelp-hack",
+      "https://decrypt.co/379465/strive-buys-94-5-million-in-bitcoin-pushing-holdings-past-27000-btc",
+      "https://decrypt.co/379468/nvidia-kill-switch-ai-agents",
+      "https://decrypt.co/379481/australia-sam-altman-dario-amodei-ai-hack",
+      "https://decrypt.co/379482/anthropic-claude-sonnet-5-5-release"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -187,5 +197,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 15
+  "adIndex": 0
 }
