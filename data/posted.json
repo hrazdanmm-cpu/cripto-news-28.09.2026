@@ -16,19 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 467,
+  "totalPostedCount": 477,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/kelpdao-layerzero-lawsuit-rseth-exploit",
-      "https://cointelegraph.com/news/magic-eden-nft-whitehat-vulnerability",
-      "https://cointelegraph.com/markets/ibit-options-trading-bitcoins-rebound",
-      "https://cointelegraph.com/news/no-confirmed-crypto-theft-iphone-safari-attack-slowmist",
-      "https://cointelegraph.com/news/coinmarketcap-coinglass-expand-crypto-derivatives-data",
-      "https://cointelegraph.com/magazine/exchanges-reporting-crypto-gains-to-irs-becomes-tax-nightmare",
-      "https://cointelegraph.com/news/crypto-biz-crypto-tradfi-stablecoins-tokenized-assets",
-      "https://cointelegraph.com/news/strategy-seeks-shareholder-approval-daily-preferred-stock-dividends",
-      "https://cointelegraph.com/news/bitget-clarifies-assets-affected-security-breach",
-      "https://cointelegraph.com/news/former-hack-vc-partner-hsin-ju-chuang-found-dead",
       "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex",
       "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo",
       "https://cointelegraph.com/news/og-com-seeks-cftc-approval-single-stock-perpetual-futures",
@@ -118,7 +108,17 @@
       "https://cointelegraph.com/news/core-lightning-urges-upgrade-amid-reports-attackers-targeting-unpatched-nodes",
       "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback",
       "https://cointelegraph.com/news/south-korea-tokenized-securities-rules-2027",
-      "https://cointelegraph.com/news/south-korea-crypto-exchange-profits-fall-78-percent"
+      "https://cointelegraph.com/news/south-korea-crypto-exchange-profits-fall-78-percent",
+      "https://cointelegraph.com/markets/bitcoin-etf-meet-uptober-103-million-inflow-btc-up",
+      "https://cointelegraph.com/news/porsche-shuts-down-web3-project-911-nft",
+      "https://cointelegraph.com/news/aave-v3-third-party-adapter-exploit-305k",
+      "https://cointelegraph.com/markets/bitcoin-87k-order-book-liquidity-wall-shifts-higher",
+      "https://cointelegraph.com/news/connect-recap-arthur-hayes-money-printing-wall-street-onchain",
+      "https://cointelegraph.com/news/bitcoin-treasuries-struggle-strategy-says-ammous",
+      "https://cointelegraph.com/markets/bnb-chain-1-billion-tokenized-assets-market-3-7-billion",
+      "https://cointelegraph.com/news/circle-eu-stablecoin-reserve-rules-mica-review",
+      "https://cointelegraph.com/magazine/furious-debate-about-thorchain-vs-near-shows-idealism-has-limits",
+      "https://cointelegraph.com/news/euro-stablecoin-not-enough-eu-case-usd-tokens"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -233,5 +233,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 0
+  "adIndex": 10
 }
