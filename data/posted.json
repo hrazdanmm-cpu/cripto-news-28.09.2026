@@ -16,10 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 487,
+  "totalPostedCount": 497,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
       "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
       "https://cointelegraph.com/news/vitalik-hegota-ethereum-last-normal-fork",
       "https://cointelegraph.com/news/south-korea-weighs-crypto-market-makers-after-jpyc-trades-at-4-times-peg",
@@ -118,7 +117,8 @@
       "https://cointelegraph.com/news/crypto-biz-kalshi-blockchain-com-crypto-treasury-valuations",
       "https://cointelegraph.com/news/71-percent-uk-finance-leaders-expect-tokenization-reshape-financial-services-lloyds",
       "https://cointelegraph.com/news/blast-to-wind-down-ethereum-l2-after-costs-outpace-revenue",
-      "https://cointelegraph.com/news/anchorage-digital-cuts-workforce-report"
+      "https://cointelegraph.com/news/anchorage-digital-cuts-workforce-report",
+      "https://cointelegraph.com/news/mica-strengthened-retail-trust-regulated-crypto-exchanges-bitpanda-ceo-says"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -198,7 +198,13 @@
       "https://www.coindesk.com/markets/2026/10/02/why-rising-perpetual-funding-rates-signal-growing-bullish-leverage-as-bitcoin-crosses-usd86-500",
       "https://www.coindesk.com/markets/2026/10/02/crypto-traders-are-in-risk-on-mode-as-bitcoin-dominance-nears-return-to-60",
       "https://www.coindesk.com/tech/2026/10/02/live-updates-bitcoin-gold-and-tech-futures-edge-higher-as-markets-await-u-s-jobs-report",
-      "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover"
+      "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
+      "https://www.coindesk.com/markets/2026/10/02/u-s-added-just-29-000-jobs-in-september-with-unemployment-rate-rising-to-4-2",
+      "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
+      "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
+      "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
+      "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
+      "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -228,7 +234,10 @@
       "https://decrypt.co/379639/cftc-investigating-adam-kinzinger-over-kalshi-bets-on-his-own-pardon-report",
       "https://decrypt.co/videos/interviews/50vopyFa/the-white-whale-up-10x-in-a-week-lighter-tge-saylor-buys-109m-btc",
       "https://decrypt.co/videos/interviews/dBDZqp65/2026-crypto-predictions-tom-lee-still-buying-eth-rekt-tease-worldstar-collab",
-      "https://decrypt.co/videos/interviews/WsvLVFlp/crypto-wallets-can-directly-compete-with-neobanks"
+      "https://decrypt.co/videos/interviews/WsvLVFlp/crypto-wallets-can-directly-compete-with-neobanks",
+      "https://decrypt.co/379645/morning-minute-robinhood-adds-perps-weekend-stocks-and-ai-traders",
+      "https://decrypt.co/379702/ex-nca-officer-must-repay-2-4m-for-bitcoin-he-stole-when-it-was-worth-77k",
+      "https://decrypt.co/379705/bitcoin-jumps-cool-pce-inflation-data"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -238,5 +247,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 20
+  "adIndex": 5
 }
