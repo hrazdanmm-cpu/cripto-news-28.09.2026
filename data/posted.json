@@ -16,11 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 447,
+  "totalPostedCount": 457,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/fed-proposes-new-capital-redemption-rules-for-stablecoin-issuers",
-      "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express",
       "https://cointelegraph.com/news/bitget-ceo-suspects-north-korea-behind-352m-hack-citing-ip-clues",
       "https://cointelegraph.com/news/block-brings-bitcoin-lightning-payments-to-x402-for-ai-agents",
       "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork",
@@ -118,7 +116,9 @@
       "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit",
       "https://cointelegraph.com/news/50000-europeans-call-on-eu-to-ease-stablecoin-rewards-restrictions-in-mica-review",
       "https://cointelegraph.com/news/donald-trump-memecoin-dinner-corruption-claims",
-      "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury"
+      "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury",
+      "https://cointelegraph.com/magazine/china-claims-crypto-used-by-spies-singapore-dominates-asian-crypto-asia-express",
+      "https://cointelegraph.com/news/sec-moves-to-clear-custody-hurdle-for-advisers-offering-crypto"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -211,7 +211,15 @@
       "https://decrypt.co/379482/anthropic-claude-sonnet-5-5-release",
       "https://decrypt.co/379561/bbc-director-general-ai-generated-doctor-who-pretty-good",
       "https://decrypt.co/379575/crypto-etfs-surge-bitcoin-adds-nearly-3-billion",
-      "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced"
+      "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced",
+      "https://decrypt.co/379583/sony-ps5-jailbreak-digital-games-ownership",
+      "https://decrypt.co/379605/anthropic-lost-42-billion-last-year-wants-ipo-2-trillion",
+      "https://decrypt.co/379612/bitwise-launches-first-spot-near-etf",
+      "https://decrypt.co/379619/cboes-sp-deal-tokenized-options",
+      "https://decrypt.co/379621/ethereum-privacy-aztec-brings-back-zk-money",
+      "https://decrypt.co/379624/us-senator-blumenthal-calls-tethers-usdt-a-superhighway-for-iranian-sanctions-evasion",
+      "https://decrypt.co/379632/mcdonalds-ai-pricing-engine-gauges-what-customers-will-pay-for-a-big-mac-report",
+      "https://decrypt.co/379639/cftc-investigating-adam-kinzinger-over-kalshi-bets-on-his-own-pardon-report"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -221,5 +229,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 5
+  "adIndex": 15
 }
