@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 547,
+  "totalPostedCount": 557,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025",
@@ -284,15 +284,25 @@
       "https://decrypt.co/379936/bitcoin-heads-higher-fed-jobs-where-does-btc-go-next",
       "https://decrypt.co/379959/nvidia-hits-record-high-market-value-5-7-trillion",
       "https://decrypt.co/379972/ethereum-layer-2-blast-shutting-down",
-      "https://decrypt.co/379975/tavus-griffin-ai-fools-people-video-thinking-human"
+      "https://decrypt.co/379975/tavus-griffin-ai-fools-people-video-thinking-human",
+      "https://decrypt.co/379984/circle-pushes-back-on-micas-bank-deposit-mandate-for-stablecoins",
+      "https://decrypt.co/379991/ethereum-now-pay-for-ai-without-revealing-identity",
+      "https://decrypt.co/379998/california-subpoena-openai-ai-models-hack",
+      "https://decrypt.co/379983/pope-leo-human-art-ai-creation",
+      "https://decrypt.co/380002/trump-third-meme-coin-dinner-details",
+      "https://decrypt.co/380001/openai-banned-pewdiepie-twice-ajax-uncensored-ai",
+      "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
       "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
       "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
       "https://www.theblock.co/news/ecosystems/2026-09-27-its-really-not-just-a-blockchain-anymore-vitalik-buterin-maps-ethereums-path-to-2030-416953",
-      "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
+      "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960",
+      "https://www.theblock.co/news/ecosystems/2026-09-30-base-launches-cobalt-upgrade-with-conditional-transactions-and-new-b20-asset-functions-417308",
+      "https://www.theblock.co/news/regulation/2026-09-30-cftc-secures-over-30-million-judgment-against-defendants-in-fundsz-fraud-case-417365",
+      "https://www.theblock.co/news/markets/2026-09-30-clarity-acts-failure-gave-crypto-faster-regulatory-wins-bitwise-says-417362"
     ]
   },
-  "adIndex": 5
+  "adIndex": 15
 }
