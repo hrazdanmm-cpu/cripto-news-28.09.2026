@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 497,
+  "totalPostedCount": 507,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins",
@@ -237,7 +237,17 @@
       "https://decrypt.co/videos/interviews/WsvLVFlp/crypto-wallets-can-directly-compete-with-neobanks",
       "https://decrypt.co/379645/morning-minute-robinhood-adds-perps-weekend-stocks-and-ai-traders",
       "https://decrypt.co/379702/ex-nca-officer-must-repay-2-4m-for-bitcoin-he-stole-when-it-was-worth-77k",
-      "https://decrypt.co/379705/bitcoin-jumps-cool-pce-inflation-data"
+      "https://decrypt.co/379705/bitcoin-jumps-cool-pce-inflation-data",
+      "https://decrypt.co/379728/trump-unveils-morally-binding-ai-accord-signed-by-openai-google-and-nvidia",
+      "https://decrypt.co/379655/introducing-the-information-exchange-powered-by-decrypt-and-myr",
+      "https://decrypt.co/379731/bitcoin-etf-9-day-streak-august-rally",
+      "https://decrypt.co/379750/cftc-sends-white-house-new-rules-to-cement-its-grip-on-prediction-markets",
+      "https://decrypt.co/379739/america-gov-ai-chatbot-minecraft-end-poem",
+      "https://decrypt.co/379759/bitget-hacker-zcash-private-pool-near-thorchain",
+      "https://decrypt.co/379767/coinbase-crypto-group-senate-midterm-endorsements-clarity-act",
+      "https://decrypt.co/379769/fbi-employees-assume-hackers-personal-data",
+      "https://decrypt.co/379772/dogecoin-getting-apps-dogeos-public-testnet",
+      "https://decrypt.co/379784/gemini-4-google-flagship-tops-ai-models-cybersecurity"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -247,5 +257,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 5
+  "adIndex": 15
 }
