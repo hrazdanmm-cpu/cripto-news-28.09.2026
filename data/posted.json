@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 527,
+  "totalPostedCount": 537,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025",
@@ -206,7 +206,10 @@
       "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
       "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
       "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
-      "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle"
+      "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
+      "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
+      "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
+      "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -264,7 +267,14 @@
       "https://decrypt.co/379808/citi-lifts-12-month-bitcoin-target-to-113k-ethereum-to-3k",
       "https://decrypt.co/379807/morning-minute-crypto-gives-up-on-congress-and-goes-after-senators",
       "https://decrypt.co/379813/minecraft-candy-crush-among-11-games-in-eu-virtual-currency-crackdown",
-      "https://decrypt.co/379822/near-intents-hacked-days-after-denying-bitget-hacker"
+      "https://decrypt.co/379822/near-intents-hacked-days-after-denying-bitget-hacker",
+      "https://decrypt.co/379830/illinois-delays-controversial-crypto-tax",
+      "https://decrypt.co/379833/uptober-will-bitcoin-live-up-to-it",
+      "https://decrypt.co/379857/openai-fires-researchers-alledged-leak-safety-group",
+      "https://decrypt.co/379856/the-largest-pure-play-xrp-treasury-is-about-to-go-public",
+      "https://decrypt.co/379868/meta-muse-ai-agent-read-messages-without-permission",
+      "https://decrypt.co/379890/openai-china-moonshot-copy-ai-hidden-reasoning",
+      "https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -274,5 +284,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 10
+  "adIndex": 20
 }
