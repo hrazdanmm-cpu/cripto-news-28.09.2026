@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 537,
+  "totalPostedCount": 547,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/markets/bitcoin-etf-billion-biggest-inflow-week-october-2025",
@@ -274,7 +274,17 @@
       "https://decrypt.co/379856/the-largest-pure-play-xrp-treasury-is-about-to-go-public",
       "https://decrypt.co/379868/meta-muse-ai-agent-read-messages-without-permission",
       "https://decrypt.co/379890/openai-china-moonshot-copy-ai-hidden-reasoning",
-      "https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers"
+      "https://decrypt.co/379892/reddit-killing-rss-feeds-public-api-access-ai-scrapers",
+      "https://decrypt.co/379899/sec-proposes-rules-advisers-funds-hold-crypto",
+      "https://decrypt.co/379901/zcash-price-drops-etf-flows-rally",
+      "https://decrypt.co/379913/spanish-police-arrest-16-year-old-accused-of-running-killsec-ransomware-group",
+      "https://decrypt.co/379921/us-designates-russias-a7-network-as-transnational-criminal-organization",
+      "https://decrypt.co/379929/morning-minute-near-intents-hacked-for-3-8m-was-it-a-bullish-hack",
+      "https://decrypt.co/379932/uptober-off-with-a-bang-as-bitcoin-surges-to-86k",
+      "https://decrypt.co/379936/bitcoin-heads-higher-fed-jobs-where-does-btc-go-next",
+      "https://decrypt.co/379959/nvidia-hits-record-high-market-value-5-7-trillion",
+      "https://decrypt.co/379972/ethereum-layer-2-blast-shutting-down",
+      "https://decrypt.co/379975/tavus-griffin-ai-fools-people-video-thinking-human"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -284,5 +294,5 @@
       "https://www.theblock.co/news/defi/2026-09-27-onchain-analyst-links-18-4-million-in-robinhood-chain-memecoin-extractions-to-single-rug-pull-operation-416960"
     ]
   },
-  "adIndex": 20
+  "adIndex": 5
 }
