@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 587,
+  "totalPostedCount": 597,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
@@ -294,7 +294,17 @@
       "https://decrypt.co/380002/trump-third-meme-coin-dinner-details",
       "https://decrypt.co/380001/openai-banned-pewdiepie-twice-ajax-uncensored-ai",
       "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea",
-      "https://decrypt.co/380014/near-intents-recovers-3-8-million-after-48-hour-ultimatum"
+      "https://decrypt.co/380014/near-intents-recovers-3-8-million-after-48-hour-ultimatum",
+      "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath",
+      "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder",
+      "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced",
+      "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta",
+      "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview",
+      "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv",
+      "https://decrypt.co/videos/interviews/ZJJKjnAR/from-stellar-to-canton-how-franklin-templeton-adopted-tokenization",
+      "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc",
+      "https://decrypt.co/380007/uptober-starts-green-bitcoin-etfs-draw-134-million",
+      "https://decrypt.co/380017/banking-group-sues-block-crypto-side-door-banking"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -334,5 +344,5 @@
       "https://bitcoinist.com/wisekey-wiseqey-redomiciliation-wqey-nasdaq/"
     ]
   },
-  "adIndex": 20
+  "adIndex": 5
 }
