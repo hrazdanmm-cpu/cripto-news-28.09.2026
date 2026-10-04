@@ -16,7 +16,7 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 597,
+  "totalPostedCount": 607,
   "sources": {
     "Cointelegraph": [
       "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
@@ -211,7 +211,8 @@
       "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
       "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
       "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
-      "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users"
+      "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
+      "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -304,7 +305,8 @@
       "https://decrypt.co/videos/interviews/ZJJKjnAR/from-stellar-to-canton-how-franklin-templeton-adopted-tokenization",
       "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc",
       "https://decrypt.co/380007/uptober-starts-green-bitcoin-etfs-draw-134-million",
-      "https://decrypt.co/380017/banking-group-sues-block-crypto-side-door-banking"
+      "https://decrypt.co/380017/banking-group-sues-block-crypto-side-door-banking",
+      "https://decrypt.co/380019/trump-jay-clayton-sec-ripple-ai-push-super-intelligence"
     ],
     "The Block": [
       "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
@@ -338,11 +340,19 @@
       "https://cryptoslate.com/arbitrum-pauses-new-stylus-activations-over-ai-assisted-attack-risks/",
       "https://cryptoslate.com/leveraged-funds-bitcoin-futures-shorts-fall-by-5300-btc-equivalent-as-longs-shrink/",
       "https://cryptoslate.com/six-us-banks-have-failed-in-2026-but-the-numbers-look-nothing-like-2023/",
-      "https://cryptoslate.com/esma-proposes-ending-eu-custody-and-transfer-services-for-non-compliant-stablecoins/"
+      "https://cryptoslate.com/esma-proposes-ending-eu-custody-and-transfer-services-for-non-compliant-stablecoins/",
+      "https://cryptoslate.com/binance-will-hold-some-brazil-crypto-deposits-until-users-explain-where-the-money-came-from/",
+      "https://cryptoslate.com/the-same-fed-rate-hike-can-help-stablecoins-and-hurt-bitcoin-borrowers/",
+      "https://cryptoslate.com/3x-bitcoin-and-ether-futures-funds-clear-sec-listing-hurdle/",
+      "https://cryptoslate.com/lidos-proposed-staking-route-needs-over-13-times-the-default-entry-bond/",
+      "https://cryptoslate.com/vitalik-inspired-ai-payment-system-can-send-expired-deposits-to-its-treasury/",
+      "https://cryptoslate.com/drift-hack-recovery-opened-near-one-cent-per-dollar-lost/",
+      "https://cryptoslate.com/indias-local-crypto-exchanges-get-just-0-7-of-inflows-chainalysis-reports/",
+      "https://cryptoslate.com/new-treasury-rules-could-change-how-stablecoin-issuers-get-your-dollars-back/"
     ],
     "Bitcoinist": [
       "https://bitcoinist.com/wisekey-wiseqey-redomiciliation-wqey-nasdaq/"
     ]
   },
-  "adIndex": 5
+  "adIndex": 15
 }
