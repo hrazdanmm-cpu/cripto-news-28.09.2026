@@ -16,18 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 637,
+  "totalPostedCount": 647,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/nvidia-unveils-ai-safety-platform-to-rein-in-rogue-ai-agents",
-      "https://cointelegraph.com/news/coinbase-gets-cftc-approval-for-us-derivatives-clearinghouse",
-      "https://cointelegraph.com/news/tether-says-it-helped-freeze-550m-in-iran-linked-usdt-this-year",
-      "https://cointelegraph.com/news/bitmine-ether-supply-target-early-november",
-      "https://cointelegraph.com/news/greece-first-mica-entrants-hcmc-binance-lagarde",
-      "https://cointelegraph.com/markets/bitcoin-bounces-to-84k-after-us-30-year-bond-yield-sets-24-year-high",
-      "https://cointelegraph.com/markets/us-crypto-etf-inflows-cool-bitcoin-ether-solana-xrp",
-      "https://cointelegraph.com/news/ethereum-glamsterdam-upgrade-sepolia",
-      "https://cointelegraph.com/news/ecb-private-firms-ai-agents-digital-euro",
       "https://cointelegraph.com/markets/bitcoin-etf-mixed-read-institutional-demand-coinshares",
       "https://cointelegraph.com/magazine/peter-brandt-says-bitcoin-may-hit-600k-by-2029-calls-xrp-a-fool-coin",
       "https://cointelegraph.com/news/bitget-ceo-gracy-chen-chances-recovering-funds-security-breach",
@@ -118,7 +109,16 @@
       "https://cointelegraph.com/features/too-big-to-pause-the-economic-stakes-of-an-ai-slowdown",
       "https://cointelegraph.com/news/china-stablecoin-p2p-wallets-crypto-restrictions",
       "https://cointelegraph.com/news/strategy-848k-bitcoin-strc-buybacks-outpace-btc-buys",
-      "https://cointelegraph.com/news/metaplanet-net-income-strategy-bitcoin-accumulation"
+      "https://cointelegraph.com/news/metaplanet-net-income-strategy-bitcoin-accumulation",
+      "https://cointelegraph.com/magazine/too-big-to-pause-the-economic-stakes-of-an-ai-slowdown",
+      "https://cointelegraph.com/markets/bitcoin-price-fails-to-break-higher-after-best-weekly-close-in-eight-months",
+      "https://cointelegraph.com/markets/bitcoin-q3-rally-treasury-yields-fed-rate-outlook",
+      "https://cointelegraph.com/news/cftc-proposed-crypto-framework-failed-clarity-vote",
+      "https://cointelegraph.com/news/sp-global-launches-risk-assessments-for-10b-crypto-lending-vault-market",
+      "https://cointelegraph.com/news/crypto-advocacy-groups-icba-lawsuit-occ-charters",
+      "https://cointelegraph.com/news/what-happened-in-crypto-today",
+      "https://cointelegraph.com/news/modern-treasury-seeks-us-trust-bank-charter-for-stablecoin-custody",
+      "https://cointelegraph.com/news/fincen-crypto-mixing-rule-legitimate-activity"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -218,7 +218,8 @@
       "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
       "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
       "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
-      "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year"
+      "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year",
+      "https://www.coindesk.com/business/2026/10/05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -371,5 +372,5 @@
       "https://bitcoinist.com/bitnomial-ondo-us-dollar-spot-futures-certified-cftc/"
     ]
   },
-  "adIndex": 20
+  "adIndex": 5
 }
