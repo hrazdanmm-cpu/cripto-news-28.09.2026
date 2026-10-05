@@ -16,10 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 607,
+  "totalPostedCount": 617,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain",
       "https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week",
       "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc",
       "https://cointelegraph.com/magazine/altseason-is-coming-and-traders-are-more-discerning-this-time",
@@ -118,7 +117,8 @@
       "https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time",
       "https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted",
       "https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war",
-      "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force"
+      "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force",
+      "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -348,11 +348,20 @@
       "https://cryptoslate.com/vitalik-inspired-ai-payment-system-can-send-expired-deposits-to-its-treasury/",
       "https://cryptoslate.com/drift-hack-recovery-opened-near-one-cent-per-dollar-lost/",
       "https://cryptoslate.com/indias-local-crypto-exchanges-get-just-0-7-of-inflows-chainalysis-reports/",
-      "https://cryptoslate.com/new-treasury-rules-could-change-how-stablecoin-issuers-get-your-dollars-back/"
+      "https://cryptoslate.com/new-treasury-rules-could-change-how-stablecoin-issuers-get-your-dollars-back/",
+      "https://cryptoslate.com/bitcoin-cores-new-fix-closes-gap-that-could-redirect-funds-without-stealing-keys/",
+      "https://cryptoslate.com/bitcoins-85000-recovery-awaits-proof-that-etf-investors-kept-buying-after-payrolls/",
+      "https://cryptoslate.com/ethereums-past-outflow-charts-can-change-when-more-exchange-wallets-are-identified/",
+      "https://cryptoslate.com/el-salvadors-666-million-bitcoin-reserve-survives-imf-review/"
     ],
     "Bitcoinist": [
-      "https://bitcoinist.com/wisekey-wiseqey-redomiciliation-wqey-nasdaq/"
+      "https://bitcoinist.com/wisekey-wiseqey-redomiciliation-wqey-nasdaq/",
+      "https://bitcoinist.com/optimism-op-node-v1-19-8-sequencer-fix/",
+      "https://bitcoinist.com/optimism-kona-v1-8-fault-proof-fixes/",
+      "https://bitcoinist.com/optimism-op-reth-v2-5-security-update/",
+      "https://bitcoinist.com/aptos-v1-49-2-hotfix-testnet-validators/",
+      "https://bitcoinist.com/optimism-op-supernode-v1-0-3-hardfork-config/"
     ]
   },
-  "adIndex": 15
+  "adIndex": 0
 }
