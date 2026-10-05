@@ -16,13 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 617,
+  "totalPostedCount": 627,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/markets/btc-price-eyes-best-q3-in-nine-years-three-things-to-know-in-bitcoin-this-week",
-      "https://cointelegraph.com/news/strategy-1665-bitcoin-buy-holdings-847666-btc",
-      "https://cointelegraph.com/magazine/altseason-is-coming-and-traders-are-more-discerning-this-time",
-      "https://cointelegraph.com/news/mica-shift-rulemaking-to-supervision-esma-chair",
       "https://cointelegraph.com/news/bitget-388m-hack-third-party-security-vulnerability",
       "https://cointelegraph.com/news/crypto-industry-spending-ohio-senate-race-sherrod-brown",
       "https://cointelegraph.com/news/bybit-accepts-franklin-templeton-tokenized-funds-trading-collateral",
@@ -118,7 +114,11 @@
       "https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted",
       "https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war",
       "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force",
-      "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest"
+      "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest",
+      "https://cointelegraph.com/news/zcash-gets-a-washington-lobbyist-to-push-crypto-policy",
+      "https://cointelegraph.com/news/safe-investor-asks-swiss-watchdog-to-intervene-in-governance-dispute",
+      "https://cointelegraph.com/news/okx-nyse-parent-file-to-launch-tokenized-us-stock-platform",
+      "https://cointelegraph.com/news/zcash-nu7-testnet-activation-november-mainnet"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
@@ -212,7 +212,11 @@
       "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
       "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
       "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
-      "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto"
+      "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
+      "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
+      "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
+      "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
+      "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks"
     ],
     "Decrypt": [
       "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
@@ -352,7 +356,8 @@
       "https://cryptoslate.com/bitcoin-cores-new-fix-closes-gap-that-could-redirect-funds-without-stealing-keys/",
       "https://cryptoslate.com/bitcoins-85000-recovery-awaits-proof-that-etf-investors-kept-buying-after-payrolls/",
       "https://cryptoslate.com/ethereums-past-outflow-charts-can-change-when-more-exchange-wallets-are-identified/",
-      "https://cryptoslate.com/el-salvadors-666-million-bitcoin-reserve-survives-imf-review/"
+      "https://cryptoslate.com/el-salvadors-666-million-bitcoin-reserve-survives-imf-review/",
+      "https://cryptoslate.com/illinois-backs-delay-to-crypto-tax-rule-after-months-of-industry-pushback/"
     ],
     "Bitcoinist": [
       "https://bitcoinist.com/wisekey-wiseqey-redomiciliation-wqey-nasdaq/",
@@ -360,8 +365,9 @@
       "https://bitcoinist.com/optimism-kona-v1-8-fault-proof-fixes/",
       "https://bitcoinist.com/optimism-op-reth-v2-5-security-update/",
       "https://bitcoinist.com/aptos-v1-49-2-hotfix-testnet-validators/",
-      "https://bitcoinist.com/optimism-op-supernode-v1-0-3-hardfork-config/"
+      "https://bitcoinist.com/optimism-op-supernode-v1-0-3-hardfork-config/",
+      "https://bitcoinist.com/bitnomial-ondo-us-dollar-spot-futures-certified-cftc/"
     ]
   },
-  "adIndex": 0
+  "adIndex": 10
 }
