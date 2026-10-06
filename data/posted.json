@@ -16,19 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 667,
+  "totalPostedCount": 677,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/us-sec-cftc-crypto-regulation-few-commissioners",
-      "https://cointelegraph.com/news/trump-accord-calls-for-tech-firms-to-self-police-their-own-frontier-ai",
-      "https://cointelegraph.com/news/binance-pay-usdt-paypay-merchants-japan",
-      "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut",
-      "https://cointelegraph.com/news/illinois-crypto-tax-rules-defi-stablecoins",
-      "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters",
-      "https://cointelegraph.com/news/allunity-europe-mica-usd-stablecoin-usdau",
-      "https://cointelegraph.com/news/bitget-hack-zero-day-slowmist-investigation",
-      "https://cointelegraph.com/magazine/crypto-hardware-wallets-compared-for-2026",
-      "https://cointelegraph.com/markets/bitcoin-etf-streak-9-day-ether-zcash-flip-red",
       "https://cointelegraph.com/opinion/a-single-market-worth-protecting-getting-the-mica-review-right",
       "https://cointelegraph.com/markets/altcoin-exchange-deposits-spike-160-in-two-weeks",
       "https://cointelegraph.com/news/fca-crypto-authorization-2027-uk-regime",
@@ -118,7 +108,17 @@
       "https://cointelegraph.com/news/rain-seeks-us-trust-bank-charter-days-after-occ-sued-over-crypto-charters",
       "https://cointelegraph.com/news/better-markets-criticize-cftc-regulate-retail-crypto",
       "https://cointelegraph.com/news/ethereum-eez-atomic-l1-l2-transaction-mainnet",
-      "https://cointelegraph.com/markets/bitcoin-etf-90-million-outflow-btc-32-below-record-oct-6"
+      "https://cointelegraph.com/markets/bitcoin-etf-90-million-outflow-btc-32-below-record-oct-6",
+      "https://cointelegraph.com/news/solana-foundation-settlement-seconds-dvp",
+      "https://cointelegraph.com/news/ondo-private-markets-tokenized-pre-ipo-ai",
+      "https://cointelegraph.com/markets/binance-btc-outflows-hit-highest-since-mid-2023-as-whales-deposit-stablecoins",
+      "https://cointelegraph.com/news/hong-kong-govt-end-2026-deadline-crypto-licensing-bill",
+      "https://cointelegraph.com/news/polymarket-smart-contract-overhaul-protocol-v2",
+      "https://cointelegraph.com/news/paxos-3b-usdg-stablecoin-launches-arbitrum",
+      "https://cointelegraph.com/opinion/us-crypto-rules-need-to-survive-the-next-election",
+      "https://cointelegraph.com/features/weaker-dollar-crypto-green-light-raoul-pal-trade-secrets",
+      "https://cointelegraph.com/news/okx-exchange-raises-capital-25b-valuation",
+      "https://cointelegraph.com/news/ethereums-glamsterdam-upgrade-launches-on-sepolia-testnet"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/business/2026/09/28/redotpay-completes-financial-audit-as-it-presses-ahead-with-u-s-ipo-plans",
@@ -373,5 +373,5 @@
       "https://bitcoinist.com/bitnomial-ondo-us-dollar-spot-futures-certified-cftc/"
     ]
   },
-  "adIndex": 0
+  "adIndex": 10
 }
