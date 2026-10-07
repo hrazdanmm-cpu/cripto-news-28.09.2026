@@ -16,19 +16,9 @@
     "Crypto Briefing": "https://cryptobriefing.com/trump-not-rushing-to-revive-iran-talks-amid-nuclear-tensions/",
     "ZyCrypto": "https://zycrypto.com/tronbid-expands-tron-resource-marketplace-giving-users-new-ways-to-rent-energy-and-reduce-usdt-fees/"
   },
-  "totalPostedCount": 707,
+  "totalPostedCount": 717,
   "sources": {
     "Cointelegraph": [
-      "https://cointelegraph.com/news/msci-strategy-metaplanet-index-rule-bpi",
-      "https://cointelegraph.com/markets/bitcoin-etf-6-3-billion-inflows-q3-btc-rise-43",
-      "https://cointelegraph.com/news/celsius-chainalysis-lawsuit-audit-claim-survives",
-      "https://cointelegraph.com/news/europe-binance-questions-esma-tighter-mica-oversight",
-      "https://cointelegraph.com/markets/bitcoin-rally-lower-us-inflation-data",
-      "https://cointelegraph.com/news/tokenized-assets-traditional-markets-dune-rwa-report",
-      "https://cointelegraph.com/magazine/stablecoins-can-drain-from-banks-and-nations-at-lightning-speed",
-      "https://cointelegraph.com/news/latam-stablecoin-liquidity-may-depend-on-few-providers-investor-says",
-      "https://cointelegraph.com/news/bitget-hack-q3-industry-losses-1-26-billion",
-      "https://cointelegraph.com/news/near-intents-exploit-assistance-bitget-hack",
       "https://cointelegraph.com/markets/bitcoin-fights-local-uptrend-us-bond-yields-drop-from-new-24-year-highs",
       "https://cointelegraph.com/news/new-york-wyoming-regulators-sign-pact-coordinate-crypto-oversight",
       "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit",
@@ -118,7 +108,17 @@
       "https://cointelegraph.com/news/conduit-lawsuit-tether-usdt-freeze",
       "https://cointelegraph.com/news/consumer-crypto-chain-abstract-to-wind-down",
       "https://cointelegraph.com/news/bitcoinde-trading-remains-halted-as-german-regulator-rejects-mica-application",
-      "https://cointelegraph.com/news/kalshis-15-min-gold-markets-overtake-ether-just-weeks-after-launch"
+      "https://cointelegraph.com/news/kalshis-15-min-gold-markets-overtake-ether-just-weeks-after-launch",
+      "https://cointelegraph.com/news/roman-storm-bitcoin-fog-doj-acquittal-bid",
+      "https://cointelegraph.com/news/russia-first-crypto-platforms-register-new-law",
+      "https://cointelegraph.com/news/bitmine-ether-5-percent-supply-hard-cap",
+      "https://cointelegraph.com/markets/bitcoin-etf-rebound-119m-inflow-ether-extend-losses",
+      "https://cointelegraph.com/markets/crypto-liquidations-hit-550m-as-bitcoin-price-dips-below-84k",
+      "https://cointelegraph.com/news/bingx-old-money-bitcoin-diamond-hands-token2049",
+      "https://cointelegraph.com/news/wall-street-wealth-creation-unsustainable-hyperliquid-ceo",
+      "https://cointelegraph.com/news/trump-backed-wlfi-plans-usd1-payments-for-online-businesses",
+      "https://cointelegraph.com/news/crypto-card-access-doesnt-match-global-demand-tangem-says",
+      "https://cointelegraph.com/news/chasing-100x-tokens-irrational-exuberance-polymarket-ceo"
     ],
     "CoinDesk": [
       "https://www.coindesk.com/markets/2026/09/29/analysts-see-10-year-treasury-yield-hitting-6-bitcoin-bulls-shouldn-t-panic",
@@ -373,5 +373,5 @@
       "https://bitcoinist.com/bitnomial-ondo-us-dollar-spot-futures-certified-cftc/"
     ]
   },
-  "adIndex": 15
+  "adIndex": 0
 }
