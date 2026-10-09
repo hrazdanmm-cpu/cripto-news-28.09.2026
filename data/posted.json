@@ -371,7 +371,15 @@
       "https://bitcoinist.com/aptos-v1-49-2-hotfix-testnet-validators/",
       "https://bitcoinist.com/optimism-op-supernode-v1-0-3-hardfork-config/",
       "https://bitcoinist.com/bitnomial-ondo-us-dollar-spot-futures-certified-cftc/"
-    ]
+    ],
+    "NewsBTC": [],
+    "Bitcoin.com News": [],
+    "CryptoPotato": [],
+    "Crypto News": [],
+    "CoinJournal": [],
+    "Crypto Daily": [],
+    "Crypto Briefing": [],
+    "ZyCrypto": []
   },
-  "adIndex": 10
+  "adIndex": 21
 }
